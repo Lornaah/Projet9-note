@@ -6,5 +6,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import apinote.model.Triggers;
 
 public interface TriggersRepository extends MongoRepository<Triggers, ObjectId> {
-
+	boolean existsTriggersByWord(String word);
 }
