@@ -85,7 +85,7 @@ public class NoteDTO {
 		if (getClass() != obj.getClass())
 			return false;
 		NoteDTO other = (NoteDTO) obj;
-		return Objects.equals(date, other.date) && id == other.id && Objects.equals(note, other.note)
+		return Objects.equals(date, other.date) && Objects.equals(id, other.id) && Objects.equals(note, other.note)
 				&& patId == other.patId;
 	}
 
